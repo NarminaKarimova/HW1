@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style_2.css">
+</head>
+
+<body>
+    <h1>Contact Information</h1>
+    <h2>My address: Baku,Azerbaijan</h2>
+    <h2><a href="education.html" target="_blank">My education</a></h2>
+
+    <h2><a href="mailto:narmina.krmva@gmail.com">Send email</a></h2>
+
+    <h2>Phone number: +994 50 436 01 65</h2>
+    <form action="mailto:narmina.krmva@gmail.com" method="post" enctype="text/plain">
+
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="email">Enter an email:</label>
+            <input id="email" type="email" placeholder="email" name="email">
+        </p>
+        <label for="pass">Enter a password(min 8 symbols):</label>
+        <input type="password" id="pass" name="password" placeholder="password" minlength="8" required>
+        <p>
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Any suggestions?"></textarea>
+
+        </p>
+        <p>
+            <label for="checkbox">I agree with all terms and conditions</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </p>
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

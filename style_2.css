@@ -1,0 +1,54 @@
+h1 {
+    color: #7b7ef8;
+    text-align: center;
+}
+
+h2 {
+    color: #96b3f7;
+}
+
+#table_1 {
+    color: #AAC4FF;
+}
+
+
+body {
+    background-color: #EEF1FF;
+    font-family: 'Noto Sans Mono', monospace;
+    width: 90%;
+    margin: 60px auto;
+}
+
+textarea {
+    resize: none;
+}
+
+
+p {
+    color: #AAC4FF
+}
+
+
+
+a:visited {
+    color: rgb(72, 33, 159);
+}
+
+a:hover {
+    background-color: rgb(158, 181, 203);
+    font-size: larger;
+}
+
+li {
+    list-style: none;
+}
+
+input[type=submit] {
+    background-color: #5e87ad;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

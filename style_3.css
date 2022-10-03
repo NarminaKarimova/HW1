@@ -1,0 +1,57 @@
+h1 {
+    color: #7b7ef8;
+    text-align: center;
+}
+
+h2 {
+    color: #96b3f7;
+}
+
+#table_2 {
+    color: #AAC4FF;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table_2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5359b0;
+    color: white;
+}
+
+#table_2 td,
+#table_2 th {
+    border: 1px solid rgb(191, 185, 185);
+    padding: 8px;
+}
+
+
+
+body {
+    background-color: #EEF1FF;
+    font-family: 'Noto Sans Mono', monospace;
+    width: 90%;
+    margin: 60px auto;
+}
+
+
+p {
+    color: #AAC4FF
+}
+
+
+
+a:visited {
+    color: rgb(159, 19, 42);
+}
+
+a:hover {
+    background-color: yellow;
+    font-size: large;
+}
+
+li {
+    list-style: none;
+}

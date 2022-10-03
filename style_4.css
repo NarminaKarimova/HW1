@@ -1,0 +1,54 @@
+body {
+    background-color: #EEF1FF;
+}
+
+.container {
+    background-color: #d6dcfb;
+    border: 2px solid #744887;
+    width: 30%;
+    height: 780px;
+    margin: 50px auto;
+    min-width: 350px;
+    border-radius: 10px;
+
+}
+
+
+.top {
+    width: 100%;
+    height: 230px;
+    background-image: url(/Users/narminakarimova/Desktop/WEB/Me.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.bio {
+    font-weight: 600;
+    font-size: 25px;
+    color: #919dd6;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+button {
+    background-color: #5e87ad;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #8896d9;
+}
+
+p {
+    color: #919dd6;
+
+}
