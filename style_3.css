@@ -7,13 +7,13 @@ h2 {
     color: #96b3f7;
 }
 
-#table_2 {
+#table {
     color: #AAC4FF;
     border-collapse: collapse;
     width: 100%;
 }
 
-#table_2 th {
+#table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -21,10 +21,15 @@ h2 {
     color: white;
 }
 
-#table_2 td,
-#table_2 th {
+#table td,
+#table th {
     border: 1px solid rgb(191, 185, 185);
     padding: 8px;
+}
+
+#table tr:hover {
+    color: rgb(80, 46, 149);
+    background-color: rgb(152, 165, 206);
 }
 
 
@@ -37,21 +42,7 @@ body {
 }
 
 
+
 p {
     color: #AAC4FF
-}
-
-
-
-a:visited {
-    color: rgb(159, 19, 42);
-}
-
-a:hover {
-    background-color: yellow;
-    font-size: large;
-}
-
-li {
-    list-style: none;
 }

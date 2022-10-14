@@ -1,0 +1,55 @@
+body {
+    background-color: #EEF1FF;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+h1 {
+    color: #7b7ef8;
+    text-align: center;
+}
+
+.desc {
+    color: #AAC4FF;
+}
+
+
+div.item {
+    margin: 35px;
+    border: 5px solid rgb(153, 131, 209);
+    border-radius: 5px;
+    float: left;
+    width: 390px;
+}
+
+div.item img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img {
+    transition: .3s ease-in-out;
+}
+
+img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+#image3 {
+    height: 20px;
+}
+
+p {
+    position: relative;
+    bottom: 27px;
+}

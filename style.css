@@ -7,15 +7,8 @@ h2 {
     color: #96b3f7;
 }
 
-hr.hr1 {
-    border-top: 2px dotted purple;
-}
-
+hr.hr1,
 hr.hr2 {
-    border-top: 2px dotted purple;
-}
-
-hr.hr3 {
     border-top: 2px dotted purple;
 }
 
@@ -39,20 +32,25 @@ div.a {
     font-style: italic;
 }
 
-#table_1 {
+#table {
     color: #AAC4FF;
 
 }
 
-#table_1 td,
-#table_1 th {
+#table td,
+#table th {
     border: 1px solid rgb(191, 185, 185);
     padding: 8px;
 }
 
-#table_1 th {
+#table th {
     background-color: #5359b0;
     color: rgb(255, 255, 255);
+}
+
+#table tr:hover {
+    color: rgb(80, 46, 149);
+    background-color: rgb(152, 165, 206);
 }
 
 
@@ -70,13 +68,26 @@ div.a {
 body {
     background-color: #EEF1FF;
     font-family: 'Noto Sans Mono', monospace;
-    width: 90%;
+    width: 80%;
     margin: 60px auto;
+}
+
+.profile {
+    float: left;
+    margin: 0 40px 10px 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
 p {
-    color: #AAC4FF
+    color: #AAC4FF;
+    margin: 40px;
+    padding-top: 4em;
 }
 
 a:visited {
@@ -96,16 +107,45 @@ img {
     width: 200px;
     height: 250px;
     border-radius: 80%;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
 }
 
-.hover figure img {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+img:hover {
+    transform: scale(1.1);
 }
 
-.hover figure:hover img {
-    -webkit-filter: blur(0);
-    filter: blur(0);
+#replace {
+    position: relative;
+    left: 260px;
+    bottom: 170px
+}
+
+.navbar {
+    overflow: scroll;
+    background-color: #a4a6fb;
+    position: fixed;
+    top: 0;
+    width: 80%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: rgb(152, 165, 206);
+    color: rgb(80, 46, 149);
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
 }
