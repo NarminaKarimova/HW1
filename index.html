@@ -5,103 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-
+    <title>Weather Teller</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="profile.html">HW1</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="https://github.com/NarminaKarimova">My GitHub</a>
-        <a href="https://narminakarimova.github.io/HW1/">GitHub page</a>
-
-    </nav>
-
-    <h1> Narmina Karimova &#128156;</h1>
-
-    <div class="clearfix">
-        <img class="profile" src="Me.jpeg" alt="This is my photo in ADA campus" width="180px" height="250px" />
-
-        <p> Hello, everyone! As you already can guess I am <b> Narmina Karimova.</b> <br>
-            I am 20 years old and I am sophomore student at ADA University in Baku, Azerbaijan. <br>
-            Here below you can learn what hobbies and skills do I have. <br>
-            I hope it
-            would not be so boring...</p>
-    </div>
-
-    <hr class="hr1">
-
-    <h2>Hobbies</h2>
-    <div class="a">
-        <ul>
-            <li>Reading books</li>
-            <ul>
-                <li><a target="_blank" href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a> </li>
-                <ul>
-                    <li>Revival</li>
-                    <li>It</li>
-                    <li>Joyland</li>
-                </ul>
-                <li><a target="_blank" href="https://www.jojomoyes.com/">Jojo Moyes</a> </li>
-                <ul>
-                    <li>Me before you</li>
-                    <li>After you</li>
-                    <li>Still me</li>
-
-                </ul>
-            </ul>
-            <li>Singing </li>
-            <li>Playing the guitar</li>
-            <li>Crocheting</li>
-        </ul>
-    </div>
-    <hr class="hr2">
-    <div>
-        <h2>Skills</h2>
-        <ul>
-            <li id="prof">Professional </li>
-
-            <table border="1" id="table">
-                <tr>
-                    <th id="Name">Name</th>
-                    <th id="lvl">The level of knowledge</th>
-                </tr>
-                <tr>
-                    <td>HTML/CSS/JS</td>
-                    <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>Python,C,Java</td>
-                    <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>UI/UX</td>
-                    <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>1C:ERP database</td>
-                    <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
-                </tr>
-            </table>
+    <div class="container">
+        <h1><i class="bx bx-left-arrow"></i>Weather Teller</h1>
+        <section class="user-input">
+            <p class="info">Enter valid city name</p>
+            <input class="city" type="text" placeholder="Enter city name" required>
+            <hr>
+            <input id="lat" type="text" placeholder="Enter latitude" required>
             <br>
-            <li id="soft">Soft</li>
-            <ol class="first_ol">
-                <li>Responsibility</li>
-                <li>Critical thinking</li>
-                <li>Organizational</li>
-                <li>Problem-solving</li>
+            <input id="long" type="text" placeholder="Enter longitude" required>
+            <hr>
+            <button id="location">Current Location</button>
+        </section>
 
-            </ol>
-        </ul>
+        <section class="output">
+            <h2 class="city">Baku</h2>
+            <img id="weather-icon" src="sunny.png" alt="weather-icon">
+            <div class="main_temp">
+                <span class="number">13</span>
+                <span class="degree">&#176;C</span>
+            </div>
+            <div class="condition">Clear</div>
+            <div class="detailed_condition">Sunny</div>
+            <hr>
+
+            <div class="bottom-data1">
+
+                <div class=" group country">
+                    <i class="bx bx-map-pin"></i>
+                    <span>Azerbaijan</span>
+                </div>
+
+                <div class="group min">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="data">
+                        <div class="temp">
+                            <span class="number">15</span>
+                            <span class="degree">&#176;C</span>
+                        </div>
+                        <p>Min-Temp</p>
+                    </div>
+                </div>
+
+                <div class="group feels-like">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="data">
+                        <div class="temp">
+                            <span class="number">15</span>
+                            <span class="degree">&#176;C</span>
+                        </div>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+
+                <div class="group max">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="data">
+                        <div class="temp">
+                            <span class="number">15</span>
+                            <span class="degree">&#176;C</span>
+                        </div>
+                        <p>Max-Temp</p>
+                    </div>
+                </div>
+
+                <div class=" group humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="data">
+                        <span class="number">15%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class=" group pressure">
+                    <i class="bi bi-arrow-bar-up"></i>
+                    <div class="data">
+                        <span class="number">1009hpa</span>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+
+                <div class=" group wind">
+                    <i class="bi bi-wind"></i>
+                    <div class="data">
+                        <span class="number">15km/h <br> South-West</span>
+                        <p>Wind</p>
+                    </div>
+                </div>
+
+                <div class=" group response">
+                    <i class="bi bi-clock"></i>
+                    <div class="data">
+                        <span class="number">15:22:56</span>
+                        <p>Time of <br> Response</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+    </div>
+    </section>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
