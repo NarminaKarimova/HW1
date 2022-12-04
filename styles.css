@@ -92,6 +92,10 @@ body {
 
 }
 
+.cityName {
+    margin-bottom: 10px;
+}
+
 .lat {
     margin-bottom: 10px;
 }
@@ -107,6 +111,17 @@ body {
 }
 
 .user-input .coordinates:hover {
+    background-color: #6a76f3;
+    color: #c98bcb;
+}
+
+.user-input .citybtn {
+    cursor: pointer;
+    background-color: #c98bcb;
+    color: #4e5bf0;
+}
+
+.user-input .citybtn:hover {
     background-color: #6a76f3;
     color: #c98bcb;
 }
