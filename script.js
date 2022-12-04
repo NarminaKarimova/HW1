@@ -8,8 +8,8 @@ const container = document.querySelector(".container"),
     currentLocation = userInput.querySelector(".location"),
     weatherIcon = document.querySelector(".weather-icon"),
     windDirection = document.querySelector(".number-7"),
-    refresh = container.querySelector("h1 i");
-citybtn = userInput.querySelector(".citybtn");
+    refresh = container.querySelector("h1 i"),
+    citybtn = userInput.querySelector(".citybtn");
 
 //based on entered city
 citybtn.addEventListener("click", () => {
