@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 500px;
-    background-image: url("sunset.jpg");
+    background-image: url("images/sunset.jpg");
     opacity: 0.6;
 }
 
@@ -41,12 +41,15 @@ body {
     background-color: #EEF1FF;
 }
 
-.user-input {
+.container .user-input {
     margin: 20px 25px 30px;
+}
+
+.container.results .user-input {
     display: none;
 }
 
-.info {
+.message {
     font-size: medium;
     text-align: center;
     border-radius: 5px;
@@ -55,7 +58,7 @@ body {
 
 }
 
-.info.load {
+.message.load {
     background-color: rgb(173, 217, 250);
     color: rgb(79, 122, 147);
     margin-bottom: 8px;
@@ -63,7 +66,7 @@ body {
 
 }
 
-.info.err {
+.message.err {
     background-color: rgb(250, 173, 173);
     color: rgb(147, 79, 79);
     margin-bottom: 8px;
@@ -73,10 +76,7 @@ body {
 }
 
 
-.user-input .city,
-#location,
-#lat,
-#long {
+.input {
     width: 100%;
     height: 45px;
     text-align: center;
@@ -92,28 +92,47 @@ body {
 
 }
 
-#lat {
+.lat {
     margin-bottom: 10px;
 }
 
-#location {
+.long {
+    margin-bottom: 10px;
+}
+
+.user-input .coordinates {
     cursor: pointer;
     background-color: #c98bcb;
     color: #4e5bf0;
 }
 
-#location:hover {
+.user-input .coordinates:hover {
     background-color: #6a76f3;
     color: #c98bcb;
 }
 
-.output {
+.user-input .location {
+    cursor: pointer;
+    background-color: #c98bcb;
+    color: #4e5bf0;
+}
 
-    display: flex;
+.user-input .location:hover {
+    background-color: #6a76f3;
+    color: #c98bcb;
+}
+
+.container .output {
+
+    display: none;
     align-items: center;
     justify-content: center;
     margin: 30px 0 0;
     flex-direction: column;
+}
+
+.container.results .output {
+    display: flex;
 }
 
 .output .city {
@@ -123,7 +142,7 @@ body {
     font-weight: 150;
 }
 
-#weather-icon {
+.weather-icon {
     max-width: 125px;
 }
 
@@ -149,6 +168,7 @@ body {
     width: 100%;
     justify-content: space-evenly;
     display: grid;
+    padding: 15px;
     height: 300px;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     gap: 50px 25px;
