@@ -17,40 +17,39 @@
     <div class="container">
         <h1><i class="bx bx-left-arrow"></i>Weather Teller</h1>
         <section class="user-input">
-            <p class="info">Enter valid city name</p>
-            <input class="city" type="text" placeholder="Enter city name" required>
+            <p class="message"></p>
+            <input class="input cityName" type="text" placeholder="Enter city name" required>
             <hr>
-            <input id="lat" type="text" placeholder="Enter latitude" required>
+            <input class="input lat" type="text" placeholder="Enter latitude" required>
             <br>
-            <input id="long" type="text" placeholder="Enter longitude" required>
+            <input class="input long" type="text" placeholder="Enter longitude" required>
+            <button class=" input coordinates">Show for given coordinates</button>
             <hr>
-            <button id="location">Current Location</button>
+            <button class=" input location">Current Location</button>
         </section>
 
         <section class="output">
-            <h2 class="city">Baku</h2>
-            <img id="weather-icon" src="sunny.png" alt="weather-icon">
+            <h2 class="city"></h2>
+            <img class="weather-icon" src="#" alt="weather-icon">
             <div class="main_temp">
-                <span class="number">13</span>
-                <span class="degree">&#176;C</span>
+                <span class="number"></span>
             </div>
-            <div class="condition">Clear</div>
-            <div class="detailed_condition">Sunny</div>
+            <div class="condition"></div>
+            <div class="detailed_condition"></div>
+
             <hr>
 
             <div class="bottom-data1">
-
                 <div class=" group country">
                     <i class="bx bx-map-pin"></i>
-                    <span>Azerbaijan</span>
+                    <span class="cntry"></span>
                 </div>
 
                 <div class="group min">
                     <i class="bx bxs-thermometer"></i>
                     <div class="data">
-                        <div class="temp">
-                            <span class="number">15</span>
-                            <span class="degree">&#176;C</span>
+                        <div class="min_temp">
+                            <span class="number-1"></span>
                         </div>
                         <p>Min-Temp</p>
                     </div>
@@ -59,9 +58,8 @@
                 <div class="group feels-like">
                     <i class="bx bxs-thermometer"></i>
                     <div class="data">
-                        <div class="temp">
-                            <span class="number">15</span>
-                            <span class="degree">&#176;C</span>
+                        <div class="real_temp">
+                            <span class="number-2"></span>
                         </div>
                         <p>Feels Like</p>
                     </div>
@@ -70,9 +68,8 @@
                 <div class="group max">
                     <i class="bx bxs-thermometer"></i>
                     <div class="data">
-                        <div class="temp">
-                            <span class="number">15</span>
-                            <span class="degree">&#176;C</span>
+                        <div class="max_temp">
+                            <span class="number-3"></span>
                         </div>
                         <p>Max-Temp</p>
                     </div>
@@ -81,7 +78,7 @@
                 <div class=" group humidity">
                     <i class="bx bxs-droplet-half"></i>
                     <div class="data">
-                        <span class="number">15%</span>
+                        <span class="number-4"></span>
                         <p>Humidity</p>
                     </div>
                 </div>
@@ -89,7 +86,7 @@
                 <div class=" group pressure">
                     <i class="bi bi-arrow-bar-up"></i>
                     <div class="data">
-                        <span class="number">1009hpa</span>
+                        <span class="number-5"></span>
                         <p>Pressure</p>
                     </div>
                 </div>
@@ -97,7 +94,8 @@
                 <div class=" group wind">
                     <i class="bi bi-wind"></i>
                     <div class="data">
-                        <span class="number">15km/h <br> South-West</span>
+                        <span class="number-6"><br></span>
+                        <p class="number-7"></p>
                         <p>Wind</p>
                     </div>
                 </div>
@@ -105,7 +103,7 @@
                 <div class=" group response">
                     <i class="bi bi-clock"></i>
                     <div class="data">
-                        <span class="number">15:22:56</span>
+                        <span class="number-8"></span>
                         <p>Time of <br> Response</p>
                     </div>
                 </div>
