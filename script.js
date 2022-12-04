@@ -11,8 +11,9 @@ const container = document.querySelector(".container"),
     refresh = container.querySelector("h1 i");
 
 //based on entered city
-inputCity.addEventListener("keyup", e => {
-    if (e.key == "Enter" && inputCity.value != "") {
+//based on entered city
+citybtn.addEventListener("click", () => {
+    if (inputCity.value != "") {
         apiRequest(inputCity.value);
     }
 
